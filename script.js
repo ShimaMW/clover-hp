@@ -385,9 +385,20 @@ window.fetchNoteFeed = async function(noteId) {
     if (items.length > 0) {
         // 1. Update Hero News Banner with REAL latest note article
         const latestArticle = items[0];
+        const pubDate = latestArticle.pubDate.toLocaleDateString('ja-JP', {year: 'numeric', month: '2-digit', day: '2-digit'}).replaceAll('/', '.');
+        
+        const heroNewsLink = document.getElementById('heroNewsLink');
+        const heroNewsDate = document.getElementById('heroNewsDate');
+        if (heroNewsLink) {
+            heroNewsLink.href = latestArticle.link;
+            heroNewsLink.innerHTML = `【公式note】${latestArticle.title} <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.75em; margin-left:4px;"></i>`;
+        }
+        if (heroNewsDate) {
+            heroNewsDate.textContent = pubDate;
+        }
+
         const tickerText = document.getElementById('tickerText');
         if (tickerText) {
-            const pubDate = latestArticle.pubDate.toLocaleDateString('ja-JP').replaceAll('/', '.');
             tickerText.href = latestArticle.link;
             tickerText.innerHTML = `
                 <span class="ticker-date">${pubDate}</span>
