@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福祉用具貸与事業所 介護屋本舗 | 株式会社クローバーコミュニケーションズ（千葉県流山市）</title>
+    <meta name="description" content="千葉県流山市西平井の「福祉用具貸与事業所 介護屋本舗」公式ページ。「ちょっとの工夫で、景色が変わる。」福祉用具貸与（13品目）・特定福祉用具販売（6種）・介護保険住宅改修工事。選択制の丁寧なご案内から申請代行まで専門相談員が一貫サポート。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Shippori+Mincho:wght@600;800&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="service.css">
+    <style>
+        /* 福祉用具ページ専用スタイル */
+        .yougu-philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 36px;
+            align-items: center;
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 24px;
+            padding: 36px;
+            box-shadow: var(--shadow-solid);
+        }
+        .yougu-philosophy-photo {
+            width: 100%;
+            height: 320px;
+            border-radius: 16px;
+            border: 1.5px solid var(--border-dark);
+            overflow: hidden;
+            box-shadow: var(--shadow-solid-sm);
+        }
+        .yougu-philosophy-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .yougu-philosophy-text {
+            color: var(--text-main);
+        }
+        .yougu-philosophy-title {
+            font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            line-height: 1.45;
+        }
+        .yougu-philosophy-p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+        .yougu-philosophy-lead {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-top: 18px;
+            line-height: 1.7;
+        }
+
+        .point-card-img-box {
+            width: 100%;
+            height: 160px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1.5px solid var(--border-dark);
+            margin-top: 16px;
+            box-shadow: 1.5px 1.5px 0px var(--border-dark);
+        }
+        .point-card-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 洗練されたSTEPフローレイアウト */
+        .step-flow-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .step-flow-card {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 16px;
+            padding: 20px 24px;
+            box-shadow: var(--shadow-solid-sm);
+            align-items: center;
+            gap: 20px;
+            transition: all 0.2s ease;
+        }
+        .step-flow-card:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-solid);
+        }
+        .step-badge-col {
+            text-align: center;
+            border-right: 2px dashed #E2E8F0;
+            padding-right: 16px;
+        }
+        .step-badge-num {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            background: var(--primary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+        .step-badge-name {
+            font-size: 0.95rem;
+            font-weight: 900;
+            color: var(--text-main);
+            display: block;
+        }
+        .step-body-col h4 {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .step-body-col p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* 選択制ボックス */
+        .choice-system-box {
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 20px;
+            padding: 28px 32px;
+            box-shadow: var(--shadow-solid);
+            margin-top: 24px;
+            max-width: 860px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* PDFカタログ案内カード */
+        .catalog-dl-card {
+            background: #FAF8F5;
+            border: 2px solid var(--border-dark);
+            border-radius: 20px;
+            padding: 28px 32px;
+            box-shadow: var(--shadow-solid);
+            max-width: 860px;
+            margin: 36px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .catalog-dl-info h3 {
+            font-size: 1.15rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 6px;
+        }
+        .catalog-dl-info p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .btn-catalog-dl {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: #FFFFFF !important;
+            font-weight: 900;
+            font-size: 0.95rem;
+            padding: 14px 28px;
+            border-radius: 40px;
+            border: 2px solid var(--border-dark);
+            box-shadow: var(--shadow-solid-sm);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .btn-catalog-dl:hover {
+            background: var(--primary-hover);
+            transform: translate(-2px, -2px);
+            box-shadow: var(--shadow-solid);
+        }
+
+        .yougu-spec-table th {
+            width: 28%;
+            white-space: nowrap;
+            vertical-align: top;
+            padding: 14px 12px;
+        }
+        .yougu-spec-table td {
+            padding: 14px 14px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 900px) {
+            .yougu-philosophy-grid {
+                grid-template-columns: 1fr;
+                padding: 24px;
+            }
+            .yougu-philosophy-photo {
+                height: 220px;
+            }
+            .step-flow-card {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .step-badge-col {
+                border-right: none;
+                border-bottom: 1.5px dashed #E2E8F0;
+                padding-right: 0;
+                padding-bottom: 10px;
+                text-align: left;
+            }
+        }
+
+        /* ピル見出しの文字色を黒に統一 & フィロソフィー幅調整 */
+        .hero-cat-tag, .section-sub-pill {
+            color: #2D3748 !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+        }
+        .silver-philosophy-text .section-sub-pill,
+        .fukurokuju-philosophy-text .section-sub-pill,
+        .hareruya-philosophy-text .section-sub-pill,
+        .kyotaku-philosophy-text .section-sub-pill,
+        .yougu-philosophy-text .section-sub-pill {
+            display: inline-flex !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+            margin-bottom: 12px !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="service-header">
+        <div class="service-header-container">
+            <a href="index.html" class="service-header-logo">
+                <img src="logo_fix-08.png" alt="株式会社クローバーコミュニケーションズ">
+            </a>
+            <div class="service-header-actions">
+                <a href="index.html#services" class="btn-header-back">トップへ戻る</a>
+                <a href="#contact" class="btn-header-contact">用具相談（無料）</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="service-hero-container">
+            <div class="service-hero-text">
+                <span class="hero-cat-tag">福祉用具レンタル・販売・住宅改修</span>
+                <h1 class="hero-main-h1">
+                    あなたの暮らしに寄り添う、<br>
+                    確かな福祉用具。<br>
+                    <span class="highlight-green">福祉用具貸与事業所 介護屋本舗</span>
+                </h1>
+                <p class="hero-desc">
+                    私たちがご提案したいのは、単なる「福祉用具」ではありません。住み慣れた地域で、あなたらしく過ごすための「これからの環境づくり」です。医療と介護のプロの視点で、暮らしを広げる一番の安心をお届けします。
+                </p>
+                <div class="hero-badges-row">
+                    <div class="hero-badge-item">一人ひとりと「対話」する用具選定</div>
+                    <div class="hero-badge-item">医療・介護のプロがチーム連携</div>
+                    <div class="hero-badge-item">地域のネットワークですぐに対応</div>
+                    <div class="hero-badge-item">納品後も丁寧な継続点検</div>
+                </div>
+            </div>
+            <div class="service-hero-photo-frame">
+                <img src="yougu-main.jpg" alt="福祉用具貸与事業所 介護屋本舗 スタッフと利用者様" class="service-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section (写真 ✕ パンフレット原文エッセイ) -->
+    <section class="service-points-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="yougu-philosophy-grid">
+                <div class="yougu-philosophy-photo">
+                    <img src="yougu-outing.jpg" alt="外出を支援する福祉用具のフィッティング">
+                </div>
+                <div class="yougu-philosophy-text">
+                    <span class="section-sub-pill">PHILOSOPHY</span>
+                    <h2 class="yougu-philosophy-title">「ちょっとの工夫で、景色が変わる。」</h2>
+                    <p class="yougu-philosophy-p">
+                        手すりの位置を、数センチ変えるだけで。<br>
+                        自分に合った車いすに、座り直すだけで。<br>
+                        今まで諦めていたことができるようになる。<br>
+                        ご家族の肩の力が、ふっと抜ける。
+                    </p>
+                    <p class="yougu-philosophy-p">
+                        身体の状態や、日々の暮らしの動線は人それぞれ違うから。<br>
+                        まずは、あなたの「ちょっとした困りごと」を私たちにお話しください。
+                    </p>
+                    <p class="yougu-philosophy-lead">
+                        医療と介護のプロの視点で、暮らしを広げる一番の安心をお届けします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3つの約束・チームの力 (写真入り3カラムカード) -->
+    <section class="service-details-section" style="background:#FFFFFF; border-top:2px solid var(--border-dark); border-bottom:2px solid var(--border-dark);">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">OUR COMMITMENT</span>
+                <h2 class="section-h2">一人ひとりと「対話」し、チームの力で暮らしを支える</h2>
+                <p style="max-width:760px; margin:12px auto 0; font-size:0.92rem; color:var(--text-muted); line-height:1.75;">
+                    介護屋本舗が目指すのは「レンタル屋さん」ではなく「利用者さまと一緒に生活の場をつくること」です。ケアマネジャー、看護師、リハビリ職員など専門職とチームを組み、最適な生活環境をご提案します。
+                </p>
+            </div>
+
+            <div class="points-grid-3">
+                <div class="point-card">
+                    <span class="point-card-num">1</span>
+                    <h3>生活と身体のプロが連携し<br>最適な環境を提案します</h3>
+                    <p>長年介護の現場で培ってきた豊富な経験と専門知識を活かし、医療と介護両方の視点から、今のあなたに本当に必要な環境をご提案します。</p>
+                    <div class="point-card-img-box">
+                        <img src="yougu-tablet.jpg" alt="タブレットを用いた迅速な情報共有と手配">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">2</span>
+                    <h3>地域のネットワークで<br>すぐに対応します</h3>
+                    <p>この地域で介護に携わって十数年。「早く解決してほしい」というお気持ちを深く理解しているからこそ、根付いた地域ネットワークで迅速に対応・解決します。</p>
+                    <div class="point-card-img-box">
+                        <img src="yougu-main.jpg" alt="福祉用具専門相談員による親身な地域対応">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">3</span>
+                    <h3>納品後も丁寧に<br>暮らしを支え続けます</h3>
+                    <p>福祉用具は「届けて終わり」ではありません。定期的にご自宅にお伺いし、安全にお使いいただけているかをしっかり点検。心地よい暮らしを継続支援します。</p>
+                    <div class="point-card-img-box">
+                        <img src="yougu-bed.jpg" alt="介護ベッドのフィッティング・点検">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 福祉用具ご利用の流れ (美しいステップカード) ＆ 選択制 -->
+    <section class="service-details-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FLOW & SYSTEM</span>
+                <h2 class="section-h2">福祉用具ご利用の流れ ＆ 制度のご案内</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">ご相談からお試し、納品、アフターフォローまで専門相談員が一貫してサポートいたします。</p>
+            </div>
+
+            <div class="step-flow-list">
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 01</span>
+                        <span class="step-badge-name">ご相談・受付</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>お電話・Webからのお問い合わせ</h4>
+                        <p>担当ケアマネジャー様経由、またはご本人・ご家族様から直接お気軽にご相談ください。急な退院による緊急手配にも迅速に対応いたします。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 02</span>
+                        <span class="step-badge-name">訪問・状況確認</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>専門相談員によるご自宅アセスメント</h4>
+                        <p>福祉用具専門相談員がご自宅にお伺いし、お身体の状態、日々の生活動線、住環境の課題を詳しくヒアリングいたします。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 03</span>
+                        <span class="step-badge-name">選定・お試し</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>デモ機による無料フィッティング</h4>
+                        <p>カタログや実際のデモ機（ベッド・車いす・歩行器等）を用いて、身体に無理がないか、操作しやすいかを事前にお試しいただけます（お試し無料）。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 04</span>
+                        <span class="step-badge-name">納品・設置</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>ご契約・組み立て設置・取扱説明</h4>
+                        <p>専任スタッフがご自宅へお届けし、安全な位置に設置。使い方や注意点を丁寧にご説明し、安心してお使いいただける状態にします。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 05</span>
+                        <span class="step-badge-name">点検・継続ケア</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>定期訪問によるメンテナンス・用具見直し</h4>
+                        <p>納品後も定期的にご自宅へ訪問し、ボルトの緩みや消耗チェック、身体状況の変化に合わせた高さ調整や用具変更を継続して行います。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 選択制（貸与 or 販売）の解説ボックス -->
+            <div class="choice-system-box">
+                <h3 style="font-size:1.1rem; font-weight:900; color:var(--text-main); margin-bottom:10px;">
+                    「貸与（レンタル）」または「販売（購入）」の選択制について
+                </h3>
+                <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.8; margin-bottom:0;">
+                    固定用手すり、歩行器、単点杖・多点杖、スロープ等の一部福祉用具について、ご利用者様自身で「レンタル」または「購入」を選択できるようになりました。専門相談員がメリット・デメリットや医師・ケアマネジャーの意見を踏まえて最適な方法をご提案し、選択後もモニタリング・メンテナンスを責任持って行います。
+                </p>
+            </div>
+
+            <!-- PDFカタログ案内カード -->
+            <div class="catalog-dl-card">
+                <div class="catalog-dl-info">
+                    <h3>福祉用具総合カタログ（PDF）</h3>
+                    <p>全取り扱い品目や詳細な寸法・仕様が掲載された公式カタログ（PDF）をご覧いただけます。</p>
+                </div>
+                <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                    <a href="kaigoyahonpo-yougu-catalog.pdf" target="_blank" rel="noopener" class="btn-catalog-dl">
+                        PDFカタログを開く
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 取り扱い品目（13品目貸与 ＆ 6種特定福祉用具購入 ＆ 住宅改修） -->
+    <section class="service-price-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">PRODUCTS & WORKS</span>
+                <h2 class="section-h2">取り扱い対象品目一覧 ＆ 介護保険住宅改修工事</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">介護保険の認定を受けている方は、原則1割（所得により2〜3割）の自己負担でご利用いただけます。</p>
+            </div>
+
+            <div class="details-block-grid">
+                <!-- 1. 貸与対象（13品目） -->
+                <div class="details-info-card">
+                    <h3>介護保険 貸与対象（13品目）</h3>
+                    <table class="spec-table yougu-spec-table">
+                        <tr>
+                            <th>1. 車椅子</th>
+                            <td>自走用・介助用標準型車椅子、普通型電動車椅子</td>
+                        </tr>
+                        <tr>
+                            <th>2. 車椅子付属品</th>
+                            <td>クッション、電動補助装置、テーブル、スライディングボード</td>
+                        </tr>
+                        <tr>
+                            <th>3. 特殊寝台</th>
+                            <td>介護用電動ベッド（背上げ・高さ調節機能付き）</td>
+                        </tr>
+                        <tr>
+                            <th>4. 特殊寝台付属品</th>
+                            <td>マットレス、サイドレール、ベッド用手すり、介助ベルト</td>
+                        </tr>
+                        <tr>
+                            <th>5. 床ずれ防止用具</th>
+                            <td>送風装置・空気圧調整付きエアーマット、体圧分散マット</td>
+                        </tr>
+                        <tr>
+                            <th>6. 体位変換器</th>
+                            <td>エアーパッド等を身体の下に挿入し体位変換・保持するもの</td>
+                        </tr>
+                        <tr>
+                            <th>7. 手すり</th>
+                            <td>床やベッドサイドに置いて使用する工事を伴わない手すり</td>
+                        </tr>
+                        <tr>
+                            <th>8. スロープ</th>
+                            <td>段差解消のための取り付け工事を伴わないスロープ</td>
+                        </tr>
+                        <tr>
+                            <th>9. 歩行器</th>
+                            <td>車輪付き歩行器、四脚歩行器、プラットホームクラッチ等</td>
+                        </tr>
+                        <tr>
+                            <th>10. 歩行補助つえ</th>
+                            <td>松葉杖、カナディアンクラッチ、ロフストランドクラッチ、多点杖</td>
+                        </tr>
+                        <tr>
+                            <th>11. 徘徊感知機器</th>
+                            <td>認知症の方が屋外へ出ようとした時にセンサーで感知・通報</td>
+                        </tr>
+                        <tr>
+                            <th>12. 移動用リフト</th>
+                            <td>床走行型・固定式リフト（つり具を除く本体）</td>
+                        </tr>
+                        <tr>
+                            <th>13. 自動排泄処理装置</th>
+                            <td>尿や便を自動的に吸引・処理する装置（レシーバー部等を除く）</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 2. 特定福祉用具購入（6種） ＆ 住宅改修 -->
+                <div class="details-info-card">
+                    <h3>特定福祉用具購入（6種・年間10万円上限）</h3>
+                    <table class="spec-table yougu-spec-table" style="margin-bottom:24px;">
+                        <tr>
+                            <th>1. 腰掛便座</th>
+                            <td>ポータブルトイレ、補高便座、立ち上がり補助便座</td>
+                        </tr>
+                        <tr>
+                            <th>2. 入浴補助用具</th>
+                            <td>シャワーチェア、浴槽内椅子、浴槽手すり、浴室内すのこ</td>
+                        </tr>
+                        <tr>
+                            <th>3. リフトのつり具</th>
+                            <td>移動用リフトに連結可能なつり具部分</td>
+                        </tr>
+                        <tr>
+                            <th>4. 排泄処理装置部品</th>
+                            <td>レシーバー、チューブ、タンク等の交換可能部品</td>
+                        </tr>
+                        <tr>
+                            <th>5. 簡易浴槽</th>
+                            <td>空気式・折りたたみ式等で容易に移動できる浴槽</td>
+                        </tr>
+                        <tr>
+                            <th>6. 排泄予測支援機器</th>
+                            <td>膀胱内の尿の溜まり具合を可視化・排泄タイミング通知</td>
+                        </tr>
+                    </table>
+
+                    <h3>介護保険 住宅改修（20万円上限）</h3>
+                    <table class="spec-table yougu-spec-table">
+                        <tr>
+                            <th>手すり取り付け</th>
+                            <td>玄関、廊下、階段、トイレ、浴室への手すり設置</td>
+                        </tr>
+                        <tr>
+                            <th>段差の解消</th>
+                            <td>敷居段差解消、屋外スロープ工事</td>
+                        </tr>
+                        <tr>
+                            <th>床材の変更</th>
+                            <td>滑りにくい床材への張り替え、クッションフロア</td>
+                        </tr>
+                        <tr>
+                            <th>扉の取り替え</th>
+                            <td>開き戸から引き戸・折れ戸への改修工事</td>
+                        </tr>
+                        <tr>
+                            <th>便器の取り替え</th>
+                            <td>和式便器から洋式便器への交換・かさ上げ</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (SEO・AIO対策) -->
+    <section class="service-faq-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FAQ</span>
+                <h2 class="section-h2">よくあるご質問</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">福祉用具のご利用やお手続きに関してよくいただくご質問にお答えします。</p>
+            </div>
+
+            <div class="faq-list-container">
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">まだ要介護認定が出ていませんが、退院に合わせてベッドや車椅子を借りられますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、要介護認定の申請中（暫定利用）であってもご利用いただけます。退院日やご帰宅のスケジュールに合わせて最短でデモ機の手配や納品設置を行いますので、お急ぎの場合もまずはご相談ください。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">デモ機のお試しや住宅改修の見積もりに費用はかかりますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            デモ機のお試し・フィッティング、および住宅改修の現地調査・お見積もりはすべて無料です。実際にご自宅でお使いいただき、身体に合っているか納得された上でご契約いただけます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">「レンタル」と「購入」どちらがいいか迷っていますが相談に乗ってもらえますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、お気軽にご相談ください。2024年の法改正により一部品目で「選択制」が導入されました。今後の病状の変化や生活環境、費用面のメリット・デメリットを専門相談員が丁寧にご説明し、最適な選択をサポートします。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">介護保険の住宅改修の申請手続きは代行してもらえますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、工事前の事前申請書類の作成から、担当ケアマネジャー様との理由書連携、工事後の完了届・給付申請手続きまで、当社が責任を持って代行いたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 流山事業所アクセス案内 -->
+    <section class="service-access-section">
+        <div class="section-container">
+            <div class="access-grid">
+                <div class="access-info-panel">
+                    <span class="hero-cat-tag">ACCESS</span>
+                    <h3>福祉用具貸与事業所 介護屋本舗</h3>
+                    <ul class="access-list">
+                        <li>
+                            <div><strong>事業所番号:</strong> 1272503721</div>
+                        </li>
+                        <li>
+                            <div><strong>所在地:</strong> 〒270-0156 千葉県流山市大字西平井 2-2 コージィコートナカムラ 101</div>
+                        </li>
+                        <li>
+                            <div><strong>お電話:</strong> <a href="tel:04-7137-9685" style="color:var(--primary); font-weight:900; font-size:1.15rem;">04-7137-9685</a></div>
+                        </li>
+                        <li>
+                            <div><strong>FAX:</strong> 04-7137-7607</div>
+                        </li>
+                        <li>
+                            <div><strong>交通アクセス:</strong> 流鉄流山線「平和台駅」徒歩約8分 / つくばエクスプレス「南流山駅」徒歩約15分</div>
+                        </li>
+                        <li>
+                            <div><strong>対応エリア:</strong> 千葉県流山市・松戸市・柏市 / 埼玉県越谷市・草加市・吉川市・松伏町など</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="access-map-panel">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=千葉県流山市大字西平井2-2&output=embed&z=15" 
+                        loading="lazy" 
+                        title="福祉用具 介護屋本舗 Google Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta-section" id="contact">
+        <div class="cta-box-inner">
+            <h2>あなたの「ちょっとした困りごと」をお聞かせください</h2>
+            <p style="max-width:800px; margin:0 auto 28px; font-size:0.95rem; line-height:1.8;">
+                ケアマネジャー様からの新規ご依頼、ご本人・ご家族からの用具のお試しや住宅改修のご相談など、専門相談員が迅速に伺います。
+            </p>
+            <div class="cta-buttons-row">
+                <a href="tel:04-7137-9685" class="btn-cta-tel">04-7137-9685</a>
+                <a href="index.html#contact" class="btn-cta-mail">Webフォームから相談する</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="service-footer">
+        <div style="margin-bottom:12px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; font-size:0.84rem;">
+            <a href="index.html" style="color:var(--text-muted); text-decoration:none;">トップページ</a>
+            <a href="recruit.html" style="color:var(--text-muted, #718096); text-decoration:none;">採用情報</a>
+            <a href="privacy.html" style="color:var(--text-muted); text-decoration:none;">個人情報保護方針</a>
+            <a href="workplace.html" style="color:var(--text-muted); text-decoration:none;">職場環境等要件</a>
+        </div>
+        <p>&copy; 2009-2026 Clover Communications Co.,Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

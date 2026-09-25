@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サービス付き高齢者向け住宅 福禄寿 | 株式会社クローバーコミュニケーションズ（千葉県流山市）</title>
+    <meta name="description" content="千葉県流山市西平井のサービス付き高齢者向け住宅「福禄寿」公式ページ。「おもてなしの心と寄り添いの介護」を理念に、木の温もりと和モダンの全20室個室。入居一時金0円、機械浴槽完備、24時間スタッフ常駐。今までのケアマネ・デイサービス・訪問診療もそのまま利用可能、安心の終の棲家（お看取り対応）。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Shippori+Mincho:wght@600;800&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="service.css">
+    <style>
+        /* 福禄寿専用スタイル */
+        .fukurokuju-philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 36px;
+            align-items: center;
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 24px;
+            padding: 36px;
+            box-shadow: var(--shadow-solid);
+        }
+        .fukurokuju-philosophy-photo {
+            width: 100%;
+            height: 320px;
+            border-radius: 16px;
+            border: 1.5px solid var(--border-dark);
+            overflow: hidden;
+            box-shadow: var(--shadow-solid-sm);
+        }
+        .fukurokuju-philosophy-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .fukurokuju-philosophy-text {
+            color: var(--text-main);
+        }
+        .fukurokuju-philosophy-title {
+            font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            line-height: 1.45;
+        }
+        .fukurokuju-philosophy-p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+        .fukurokuju-philosophy-lead {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-top: 18px;
+            line-height: 1.7;
+        }
+
+        .point-card-img-box {
+            width: 100%;
+            height: 160px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1.5px solid var(--border-dark);
+            margin-top: 16px;
+            box-shadow: 1.5px 1.5px 0px var(--border-dark);
+        }
+        .point-card-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* サ高住とは？解説ボックス */
+        .sakoju-guide-card {
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 20px;
+            padding: 30px 32px;
+            box-shadow: var(--shadow-solid);
+            max-width: 880px;
+            margin: 36px auto 0;
+        }
+        .sakoju-guide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .sakoju-guide-item {
+            background: #FAF8F5;
+            border: 1.5px solid var(--border-dark);
+            border-radius: 14px;
+            padding: 18px 16px;
+            box-shadow: 1.5px 1.5px 0px var(--border-dark);
+        }
+        .sakoju-guide-item h4 {
+            font-size: 0.92rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .sakoju-guide-item p {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* 洗練されたSTEPフローレイアウト */
+        .step-flow-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .step-flow-card {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 16px;
+            padding: 20px 24px;
+            box-shadow: var(--shadow-solid-sm);
+            align-items: center;
+            gap: 20px;
+            transition: all 0.2s ease;
+        }
+        .step-flow-card:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-solid);
+        }
+        .step-badge-col {
+            text-align: center;
+            border-right: 2px dashed #E2E8F0;
+            padding-right: 16px;
+        }
+        .step-badge-num {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            background: var(--primary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+        .step-badge-name {
+            font-size: 0.95rem;
+            font-weight: 900;
+            color: var(--text-main);
+            display: block;
+        }
+        .step-body-col h4 {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .step-body-col p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* 料金表の幅最適化 */
+        .price-fukurokuju-table th, 
+        .price-fukurokuju-table td {
+            padding: 14px 18px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 900px) {
+            .fukurokuju-philosophy-grid {
+                grid-template-columns: 1fr;
+                padding: 24px;
+            }
+            .fukurokuju-philosophy-photo {
+                height: 220px;
+            }
+            .step-flow-card {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .sakoju-guide-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ピル見出しの文字色を黒に統一 & フィロソフィー幅調整 */
+        .hero-cat-tag, .section-sub-pill {
+            color: #2D3748 !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+        }
+        .silver-philosophy-text .section-sub-pill,
+        .fukurokuju-philosophy-text .section-sub-pill,
+        .hareruya-philosophy-text .section-sub-pill,
+        .kyotaku-philosophy-text .section-sub-pill,
+        .yougu-philosophy-text .section-sub-pill {
+            display: inline-flex !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+            margin-bottom: 12px !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="service-header">
+        <div class="service-header-container">
+            <a href="index.html" class="service-header-logo">
+                <img src="logo_fix-08.png" alt="株式会社クローバーコミュニケーションズ">
+            </a>
+            <div class="service-header-actions">
+                <a href="index.html#services" class="btn-header-back">トップへ戻る</a>
+                <a href="#contact" class="btn-header-contact">見学・入居相談</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (福禄寿の泣き別れを防止) -->
+    <section class="service-hero">
+        <div class="service-hero-container">
+            <div class="service-hero-text">
+                <span class="hero-cat-tag">サービス付き高齢者向け住宅</span>
+                <h1 class="hero-main-h1">
+                    木の温もりと和モダン。<br>
+                    自分らしく暮らす場所。<br>
+                    <span style="font-size:0.85em; font-weight:800; color:var(--text-main); display:block; margin-top:6px;">サービス付き高齢者向け住宅</span>
+                    <span class="highlight-green" style="display:inline-block; word-break:keep-all;">福禄寿</span>
+                </h1>
+                <p class="hero-desc">
+                    福禄寿は、最期の時間までお過ごしいただける「終の棲家」として安心して暮らせるサービス付き高齢者向け住宅です。「おもてなしの心と寄り添いの介護」を理念として、全20室の手と目と心が届く規模だからこそできる、一人ひとりの個別性に合わせた温かなケアをお届けします。
+                </p>
+                <div class="hero-badges-row">
+                    <div class="hero-badge-item">入居一時金 0円</div>
+                    <div class="hero-badge-item">全20室・和モダン個室</div>
+                    <div class="hero-badge-item">24時間介護スタッフ常駐</div>
+                    <div class="hero-badge-item">終身利用・お看取り対応</div>
+                </div>
+            </div>
+            <div class="service-hero-photo-frame">
+                <img src="fukurokuju-community.jpg" alt="サービス付き高齢者向け住宅 福禄寿 地域交流のひととき" class="service-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section (写真 ✕ サ高住の強み・自宅サービスそのまま継続) -->
+    <section class="service-points-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="fukurokuju-philosophy-grid">
+                <div class="fukurokuju-philosophy-photo">
+                    <img src="fukurokuju-outing.jpg" alt="福禄寿 心弾む外出のひととき">
+                </div>
+                <div class="fukurokuju-philosophy-text">
+                    <span class="section-sub-pill">PHILOSOPHY</span>
+                    <h2 class="fukurokuju-philosophy-title">「これまでのつながりはそのままに、安心の暮らしへ。」</h2>
+                    <p class="fukurokuju-philosophy-p">
+                        施設に入居すると、「これまでお世話になっていたケアマネジャーさんや先生とお別れしなければならないの？」と不安に思われる方が少なくありません。
+                    </p>
+                    <p class="fukurokuju-philosophy-p">
+                        福禄寿はサービス付き高齢者向け住宅（住宅型）のため、<strong>ご自宅で長年お世話になっていた担当ケアマネジャー様、かかりつけ医（訪問診療）、訪問看護、外部デイサービス等をご入居後もそのまま継続してご利用いただけます。</strong>
+                    </p>
+                    <p class="fukurokuju-philosophy-lead">
+                        これまで築いてきた安心の人とのつながりを大切にしながら、24時間の見守りと温かいおもてなしで快適な毎日を支えます。
+                    </p>
+                </div>
+            </div>
+
+            <!-- サ高住とは？（わかりやすい解説BOX） -->
+            <div class="sakoju-guide-card">
+                <h3 style="font-size:1.1rem; font-weight:900; color:var(--text-main); text-align:center; margin-bottom:8px;">
+                    サービス付き高齢者向け住宅（サ高住）とは？
+                </h3>
+                <p style="font-size:0.88rem; color:var(--text-muted); text-align:center; max-width:680px; margin:0 auto; line-height:1.75;">
+                    高齢者の方が安心して自立した暮らしを続けられる「バリアフリーの賃貸住宅」です。<br>有料老人ホームに比べ、高い自由度とお手軽な初期費用でご入居いただけるのが特徴です。
+                </p>
+                <div class="sakoju-guide-grid">
+                    <div class="sakoju-guide-item">
+                        <h4>1. 自宅と同じ高い自由度</h4>
+                        <p>賃貸住宅契約のため、外出や面会、今までのケアマネジャーや外部デイサービスの利用が自由です。</p>
+                    </div>
+                    <div class="sakoju-guide-item">
+                        <h4>2. 24時間の安心見守り</h4>
+                        <p>介護スタッフが24時間常駐。日々の安否確認や生活相談、夜間の体調変化にも迅速に対応します。</p>
+                    </div>
+                    <div class="sakoju-guide-item">
+                        <h4>3. 入居一時金 0円</h4>
+                        <p>高額な入居金は不要（一時金0円）。敷金のみで初期費用を抑えてご入居いただけます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3つの安心理由 (写真入り3カラムカード) -->
+    <section class="service-details-section" style="background:#FFFFFF; border-top:2px solid var(--border-dark); border-bottom:2px solid var(--border-dark);">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FUKUROKUJU FEATURES</span>
+                <h2 class="section-h2">福禄寿が選ばれる3つの安心理由</h2>
+                <p style="max-width:760px; margin:12px auto 0; font-size:0.92rem; color:var(--text-muted); line-height:1.75;">
+                    全20室の手と目と心が届く規模の中で、お一人おひとりの生活習慣や想いに寄り添うケアを提供しています。
+                </p>
+            </div>
+
+            <div class="points-grid-3">
+                <div class="point-card">
+                    <span class="point-card-num">1</span>
+                    <h3>木の温もりと和モダン<br>広々とした完全個室</h3>
+                    <p>全室プライバシーの保たれた個室設計（18.63㎡〜）。お気に入りの家具や思い出の品をお持ち込みいただき、ご自宅のように"自分らしく"落ち着いてお過ごしいただけます。</p>
+                    <div class="point-card-img-box">
+                        <img src="fukurokuju-entrance.jpg" alt="福禄寿 温かなおもてなしのエントランス">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">2</span>
+                    <h3>最新の機械浴槽を完備<br>寝たきりの方も安心入浴</h3>
+                    <p>一般的な個浴槽に加え、寝たまま安全に温かいお風呂を楽しめる「機械浴槽」を完備。車椅子の方やお身体が重度化された方もご負担なく快適に入浴いただけます。</p>
+                    <div class="point-card-img-box">
+                        <img src="fukurokuju-bath.jpg" alt="福禄寿 最新機械浴槽">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">3</span>
+                    <h3>最期の時間まで寄り添う<br>終の棲家（お看取り対応）</h3>
+                    <p>24時間スタッフ常駐はもちろん、地域の訪問看護・在宅サービス全般や提携診療所と密に連携。住み慣れた居室で最期まで温かくお看取りまでケアを行います。</p>
+                    <div class="point-card-img-box">
+                        <img src="fukurokuju-staff2.jpg" alt="福禄寿 スタッフと利用者様の温かい笑顔">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 入居までの流れ (FLOW - ステップカード) -->
+    <section class="service-details-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FLOW</span>
+                <h2 class="section-h2">ご見学からご入居までの流れ</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">ご相談からご見学、ご面談、ご入居まで専門スタッフが丁寧にご案内いたします。</p>
+            </div>
+
+            <div class="step-flow-list">
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 01</span>
+                        <span class="step-badge-name">お問い合わせ</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>お電話・Webからのお問い合わせ</h4>
+                        <p>空室状況の確認、料金のお見積もり、パンフレットのご請求などお気軽にお問い合わせください。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 02</span>
+                        <span class="step-badge-name">施設のご見学</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>居室・共有部・お風呂のご見学</h4>
+                        <p>担当者が館内をご案内し、生活の様子やサービス内容を丁寧にご説明します。担当ケアマネジャー様のご同行も大歓迎です。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 03</span>
+                        <span class="step-badge-name">お申し込み・ご面談</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>ご本人様・ご家族様との事前ヒアリング</h4>
+                        <p>生活状況、お身体の状態、医療ニーズやご希望の生活習慣を詳しくお伺いし、最適なサポート体制を検討します。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 04</span>
+                        <span class="step-badge-name">ご契約</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>契約締結（入居一時金0円・敷金のみ）</h4>
+                        <p>賃貸借契約および生活支援サービス契約を締結いたします。高額な入居一時金は不要です。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 05</span>
+                        <span class="step-badge-name">ご入居・新生活</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>お引越し・新しい暮らしのスタート</h4>
+                        <p>スタッフ一同笑顔でお迎えいたします。お気に入りの家具を配置し、安心の新しい毎日をお過ごしください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Section (見やすい料金表・改行最適化) -->
+    <section class="service-price-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">PRICE GUIDE</span>
+                <h2 class="section-h2">ご利用料金のご案内</h2>
+            </div>
+
+            <div class="price-summary-box">
+                <div class="price-main-tag">
+                    <span class="price-lead-label">基本月額利用料（個室・1名入居の場合）</span>
+                    <span class="price-main-amount">218,000 円 / 月</span>
+                </div>
+
+                <table class="price-table-detail price-fukurokuju-table">
+                    <thead>
+                        <tr style="background:#FAF8F5;">
+                            <th style="width:30%;">項目</th>
+                            <th style="text-align:right; width:35%;">個室（18.63㎡〜 / 1名）</th>
+                            <th style="text-align:right; width:35%;">二人室（22.73㎡ / 2名）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>家賃</strong></td>
+                            <td style="text-align:right;">70,000円</td>
+                            <td style="text-align:right;">130,000円</td>
+                        </tr>
+                        <tr>
+                            <td><strong>共益費</strong></td>
+                            <td style="text-align:right;">41,000円（1名あたり）</td>
+                            <td style="text-align:right;">82,000円（2名分）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>サービス費</strong></td>
+                            <td style="text-align:right;">35,000円（1名あたり）</td>
+                            <td style="text-align:right;">70,000円（2名分）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>食費（3食✕30日）</strong></td>
+                            <td style="text-align:right;">
+                                72,000円<br>
+                                <span style="font-size:0.84rem; color:var(--text-muted);">（朝600円/昼900円/夕900円）</span>
+                            </td>
+                            <td style="text-align:right;">144,000円（2名分）</td>
+                        </tr>
+                        <tr style="font-size:1.02rem;">
+                            <td><strong>基本月額 合計</strong></td>
+                            <td style="text-align:right;"><strong style="font-size:1.15rem;">218,000 円</strong></td>
+                            <td style="text-align:right;"><strong style="font-size:1.15rem;">426,000 円</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="background:#FFFFFF; border:1.5px solid var(--border-dark); border-radius:12px; padding:18px; margin-top:18px; text-align:left;">
+                    <p style="font-size:0.9rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">
+                        ご契約時の一時金・個別サービスについて
+                    </p>
+                    <ul style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; margin-left:20px;">
+                        <li><strong>入居一時金：0円</strong>（高額な入居金は一切不要です）</li>
+                        <li><strong>敷金：家賃2か月分</strong>（ご退居時に修繕費等を差し引いて全額返金いたします）</li>
+                        <li><strong>個別オプション代行費（希望者のみ）</strong>：リネン代行 5,000円/月、洗濯代行 4,750円/月、生活消耗品費 5,500円/月</li>
+                        <li>※食費は喫食実績に応じたご請求となります（上記は1日3食✕30日換算）。</li>
+                        <li>※介護保険自己負担分、医療費等は別途となります。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section (スペック ＆ サービス) -->
+    <section class="service-details-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FACILITY & SERVICES</span>
+                <h2 class="section-h2">施設概要・提供サービス一覧</h2>
+            </div>
+
+            <div class="details-block-grid">
+                <div class="details-info-card">
+                    <h3>居室・施設設備スペック</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <th>住宅種別</th>
+                            <td>サービス付き高齢者向け住宅</td>
+                        </tr>
+                        <tr>
+                            <th>居室総数</th>
+                            <td>全20室（個室 18.63㎡〜 / 二人室 22.73㎡）</td>
+                        </tr>
+                        <tr>
+                            <th>居室設備</th>
+                            <td>トイレ、洗面所、収納、空調設備、照明器具、ナースコール、介護用ベッド（レンタル）</td>
+                        </tr>
+                        <tr>
+                            <th>共用設備</th>
+                            <td>メインホール（食堂・談笑スペース）、浴室（個浴・機械浴槽）、談話室、車椅子対応設計</td>
+                        </tr>
+                        <tr>
+                            <th>入居条件</th>
+                            <td>概ね60歳以上の方、要支援・要介護認定を受けられている方</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="details-info-card">
+                    <h3>提供サービス内容</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <th>生活支援</th>
+                            <td>居室清掃、洗濯代行、消耗品管理、買い物代行</td>
+                        </tr>
+                        <tr>
+                            <th>身体介護</th>
+                            <td>食事介助、入浴介助、排泄介助、移動移乗介助</td>
+                        </tr>
+                        <tr>
+                            <th>健康管理</th>
+                            <td>24時間安否確認、体調観察、服薬支援、緊急時対応</td>
+                        </tr>
+                        <tr>
+                            <th>食事サービス</th>
+                            <td>栄養バランスに配慮した温かい1日3食のご提供</td>
+                        </tr>
+                        <tr>
+                            <th>医療・看護連携</th>
+                            <td>地域の在宅介護サービス全般・提携診療医との24時間連携・お看取り</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (SEO・AIO対策) -->
+    <section class="service-faq-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FAQ</span>
+                <h2 class="section-h2">よくあるご質問</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">福禄寿のご入居や設備に関してよくいただくご質問にお答えします。</p>
+            </div>
+
+            <div class="faq-list-container">
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">入居一時金は本当にかかりませんか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、入居一時金は0円です。ご契約時には家賃2か月分の敷金のみお預かりし、ご退居時に原状回復・修繕費を差し引いて全額返金いたします。高額な初期費用を抑えてご入居いただけます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">自宅でお世話になっていたケアマネジャーやデイサービス、訪問診療はそのまま続けられますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、すべてそのまま継続してご利用いただけます。福禄寿はサービス付き高齢者向け住宅（住宅型）ですので、現在担当されているケアマネジャー様、かかりつけ医（訪問診療）、訪問看護ステーション、お気に入りの外部デイサービスなどを変更することなくそのままご利用いただけます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">車椅子や寝たきりの状態でもお風呂に入れますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、ご入浴いただけます。福禄寿には寝たまま安全に入浴できる最新の「機械浴槽」を完備しております。介護スタッフがマンツーマンで付き添い、身体にご負担をかけずに温かいお風呂をお楽しみいただけます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">介護度が重くなったり、お看取りが必要になった場合も退去せず住み続けられますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、住み慣れた居室で最期までお過ごしいただけます。福禄寿は「終の棲家」として運営しており、状態が重度化しても退去を迫ることなく、主治医や訪問看護ステーション コパン、ご家族様と密に連携して温かくお看取りまでケアを行います。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">夫婦で一緒に入居できる二人部屋はありますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、22.73㎡の広々とした「二人室」をご用意しております。ご夫婦はもちろん、ご兄弟や親子でのご入居も可能です。空室状況はお気軽にお問い合わせください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 流山事業所アクセス案内 -->
+    <section class="service-access-section">
+        <div class="section-container">
+            <div class="access-grid">
+                <div class="access-info-panel">
+                    <span class="hero-cat-tag">ACCESS</span>
+                    <h3>サービス付き高齢者向け住宅 福禄寿</h3>
+                    <ul class="access-list">
+                        <li>
+                            <div><strong>所在地:</strong> 〒270-0156 千葉県流山市西平井2丁目19番地1</div>
+                        </li>
+                        <li>
+                            <div><strong>お電話:</strong> <a href="tel:04-7192-8882" style="color:var(--primary); font-weight:900; font-size:1.1rem;">04-7192-8882</a></div>
+                        </li>
+                        <li>
+                            <div><strong>FAX:</strong> 04-7192-8883</div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>交通アクセス:</strong><br>
+                                ・JR武蔵野線「南流山駅」徒歩15分<br>
+                                ・流鉄流山線「平和台駅」徒歩16分<br>
+                                ・流鉄流山線「鰭ヶ崎駅」徒歩15分<br>
+                                ・東武バス「西平井自治会館入口」徒歩5分
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="access-map-panel">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=千葉県流山市西平井2丁目19番地1&output=embed&z=15" 
+                        loading="lazy" 
+                        title="福禄寿 Google Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta-section" id="contact">
+        <div class="cta-box-inner">
+            <h2>施設のご見学・入居相談はお気軽にどうぞ</h2>
+            <p style="max-width:800px; margin:0 auto 28px; font-size:0.95rem; line-height:1.8;">
+                空室状況のご確認、施設・居室のご見学、料金のお見積もりなど、専門スタッフが丁寧にご案内いたします。
+            </p>
+            <div class="cta-buttons-row">
+                <a href="tel:04-7192-8882" class="btn-cta-tel">04-7192-8882</a>
+                <a href="index.html#contact" class="btn-cta-mail">Webフォームから相談する</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="service-footer">
+        <div style="margin-bottom:12px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; font-size:0.84rem;">
+            <a href="index.html" style="color:var(--text-muted); text-decoration:none;">トップページ</a>
+            <a href="recruit.html" style="color:var(--text-muted, #718096); text-decoration:none;">採用情報</a>
+            <a href="privacy.html" style="color:var(--text-muted); text-decoration:none;">個人情報保護方針</a>
+            <a href="workplace.html" style="color:var(--text-muted); text-decoration:none;">職場環境等要件</a>
+        </div>
+        <p>&copy; 2009-2026 Clover Communications Co.,Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

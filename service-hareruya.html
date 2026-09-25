@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>住宅型有料老人ホーム 晴れる家 | 株式会社クローバーコミュニケーションズ（埼玉県越谷市）</title>
+    <meta name="description" content="埼玉県越谷市花田の住宅型有料老人ホーム「晴れる家」公式ページ。「おかえりなさい」が言える場所。全9床の小さなホームだからこそできる一人ひとりに寄り添う家族のようなケア。24時間スタッフ常駐、地域の医療・訪問看護連携、終の棲家（お看取り対応）。今までのケアマネ・訪問診療も継続可能。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Shippori+Mincho:wght@600;800&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="service.css">
+    <style>
+        /* 晴れる家専用スタイル（福祉用具・福禄寿の洗練デザインと完全統一） */
+        .hareruya-philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 36px;
+            align-items: center;
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 24px;
+            padding: 36px;
+            box-shadow: var(--shadow-solid);
+        }
+        .hareruya-philosophy-photo {
+            width: 100%;
+            height: 320px;
+            border-radius: 16px;
+            border: 1.5px solid var(--border-dark);
+            overflow: hidden;
+            box-shadow: var(--shadow-solid-sm);
+        }
+        .hareruya-philosophy-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hareruya-philosophy-text {
+            color: var(--text-main);
+        }
+        .hareruya-philosophy-title {
+            font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            line-height: 1.45;
+        }
+        .hareruya-philosophy-p {
+            font-size: 0.95rem;
+            line-height: 1.9;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+        .hareruya-philosophy-lead {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-top: 18px;
+            line-height: 1.7;
+        }
+
+        .point-card-img-box {
+            width: 100%;
+            height: 160px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1.5px solid var(--border-dark);
+            margin-top: auto;
+            box-shadow: 1.5px 1.5px 0px var(--border-dark);
+        }
+        .point-card-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 住宅型有料老人ホームとは？解説ボックス */
+        .home-guide-card {
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 20px;
+            padding: 30px 32px;
+            box-shadow: var(--shadow-solid);
+            max-width: 880px;
+            margin: 36px auto 0;
+        }
+        .home-guide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .home-guide-item {
+            background: #FAF8F5;
+            border: 1.5px solid var(--border-dark);
+            border-radius: 14px;
+            padding: 18px 16px;
+            box-shadow: 1.5px 1.5px 0px var(--border-dark);
+        }
+        .home-guide-item h4 {
+            font-size: 0.92rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .home-guide-item p {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* 洗練されたSTEPフローレイアウト */
+        .step-flow-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .step-flow-card {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 16px;
+            padding: 20px 24px;
+            box-shadow: var(--shadow-solid-sm);
+            align-items: center;
+            gap: 20px;
+            transition: all 0.2s ease;
+            margin-bottom: 4px;
+        }
+        .step-flow-card:hover {
+            transform: translateX(4px);
+            box-shadow: var(--shadow-solid);
+        }
+        .step-badge-col {
+            text-align: center;
+            border-right: 2px dashed #E2E8F0;
+            padding-right: 16px;
+        }
+        .step-badge-num {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: #FFFFFF;
+            background: var(--primary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+        .step-badge-name {
+            font-size: 0.95rem;
+            font-weight: 900;
+            color: var(--text-main);
+            display: block;
+        }
+        .step-body-col h4 {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .step-body-col p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            .hareruya-philosophy-grid {
+                grid-template-columns: 1fr;
+                padding: 24px;
+            }
+            .hareruya-philosophy-photo {
+                height: 220px;
+            }
+            .step-flow-card {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+            .home-guide-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ピル見出しの文字色を黒に統一 & フィロソフィー幅調整 */
+        .hero-cat-tag, .section-sub-pill {
+            color: #2D3748 !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+        }
+        .silver-philosophy-text .section-sub-pill,
+        .fukurokuju-philosophy-text .section-sub-pill,
+        .hareruya-philosophy-text .section-sub-pill,
+        .kyotaku-philosophy-text .section-sub-pill,
+        .yougu-philosophy-text .section-sub-pill {
+            display: inline-flex !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+            margin-bottom: 12px !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="service-header">
+        <div class="service-header-container">
+            <a href="index.html" class="service-header-logo">
+                <img src="logo_fix-08.png" alt="株式会社クローバーコミュニケーションズ">
+            </a>
+            <div class="service-header-actions">
+                <a href="index.html#services" class="btn-header-back">トップへ戻る</a>
+                <a href="#contact" class="btn-header-contact">見学・入居相談</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="service-hero-container">
+            <div class="service-hero-text">
+                <span class="hero-cat-tag">住宅型有料老人ホーム</span>
+                <h1 class="hero-main-h1">
+                    全9床のあたたかな我が家。<br>
+                    <span style="font-size:0.85em; font-weight:800; color:var(--text-main); display:block; margin-top:6px;">住宅型有料老人ホーム</span>
+                    <span class="highlight-green" style="display:inline-block; word-break:keep-all;">晴れる家</span>
+                </h1>
+                <p class="hero-desc">
+                    「晴れる家」は、全9室の家庭的で温かな雰囲気の中で、お一人おひとりの生活リズムや想いに寄り添う住宅型有料老人ホームです。24時間スタッフ常駐の安心見守りと医療連携で、住み慣れた地域で最期まで安心して暮らせる「終の棲家」をご提供します。
+                </p>
+                <div class="hero-badges-row">
+                    <div class="hero-badge-item">入居一時金 0円</div>
+                    <div class="hero-badge-item">月額14.1万円〜（続けやすい安心価格）</div>
+                    <div class="hero-badge-item">全9床・家庭的な温もり</div>
+                    <div class="hero-badge-item">終身・お看取り対応</div>
+                </div>
+            </div>
+            <div class="service-hero-photo-frame">
+                <img src="hareruya-exterior.jpg" alt="住宅型有料老人ホーム 晴れる家 外観" class="service-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section (写真 ✕ パンフレット公式エッセイ) -->
+    <section class="service-points-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="hareruya-philosophy-grid">
+                <div class="hareruya-philosophy-photo">
+                    <img src="hareruya-hands.jpg" alt="手を優しく包み込む温かいケア">
+                </div>
+                <div class="hareruya-philosophy-text">
+                    <span class="section-sub-pill">PHILOSOPHY</span>
+                    <h2 class="hareruya-philosophy-title">「おかえりなさい」が言える場所。</h2>
+                    <p class="hareruya-philosophy-p">
+                        味噌汁をつくる匂い、他愛もない笑い声。<br>
+                        「晴れる家」にあるのは「いつもの暮らし」です。
+                    </p>
+                    <p class="hareruya-philosophy-p">
+                        全9床という小さなホームだからこそ、<br>
+                        利用者さま一人ひとりの声や表情に寄り添い、<br>
+                        もう一人の家族として穏やかな時間を共有しています。
+                    </p>
+                    <p class="hareruya-philosophy-lead">
+                        「住み慣れた家のように、自分らしく最期まで過ごしたい。」<br>
+                        誰もが抱くその願いに寄り添い、ご家族や地域の皆さまと手を取り合いながら、かけがえのない人生の旅路を共に歩んでいきましょう。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 住宅型有料老人ホームとは？（わかりやすい解説BOX） -->
+            <div class="home-guide-card">
+                <h3 style="font-size:1.1rem; font-weight:900; color:var(--text-main); text-align:center; margin-bottom:8px;">
+                    住宅型有料老人ホームとは？
+                </h3>
+                <p style="font-size:0.88rem; color:var(--text-muted); text-align:center; max-width:680px; margin:0 auto; line-height:1.75;">
+                    生活支援や食事サービスを受けながら、必要な介護・看護サービスをご自身で選んで利用できる施設です。<br>家庭的な温もりの中で、安心で穏やかな暮らしを継続していただけます。
+                </p>
+                <div class="home-guide-grid">
+                    <div class="home-guide-item">
+                        <h4>1. 自宅のサービスを継続</h4>
+                        <p>今まで担当のケアマネジャー様やかかりつけ医、訪問看護をそのまま継続してご利用いただけます。</p>
+                    </div>
+                    <div class="home-guide-item">
+                        <h4>2. 全9床の手厚い家族ケア</h4>
+                        <p>24時間スタッフ常駐。少人数だからこそ一人ひとりのペースに合わせた細やかな見守りを行います。</p>
+                    </div>
+                    <div class="home-guide-item">
+                        <h4>3. 続けやすい良心的な価格</h4>
+                        <p>高額な入居金は不要（一時金0円）。年金の範囲内でも長く安心して暮らせる透明な料金設計です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3つの安心理由 (写真入り3カラムカード) -->
+    <section class="service-details-section" style="background:#FFFFFF; border-top:2px solid var(--border-dark); border-bottom:2px solid var(--border-dark);">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">HARERUYA FEATURES</span>
+                <h2 class="section-h2">晴れる家が選ばれる3つの安心理由</h2>
+                <p style="max-width:760px; margin:12px auto 0; font-size:0.92rem; color:var(--text-muted); line-height:1.75;">
+                    全9床の家庭的な温もりの中で、お一人おひとりの生活習慣や想いに寄り添うケアを提供しています。
+                </p>
+            </div>
+
+            <div class="points-grid-3">
+                <div class="point-card">
+                    <span class="point-card-num">1</span>
+                    <h3>少人数だからできる<br>1対1の温かな個別ケア</h3>
+                    <p>全9室の家庭的な空間だからこそ、お一人おひとりの生活リズムやこだわり、その日の体調の変化にスタッフがすぐに気づき、柔軟に対応できます。</p>
+                    <div class="point-card-img-box">
+                        <img src="hareruya-recreation.jpg" alt="晴れる家 温かな個別ケアとレクリエーション">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">2</span>
+                    <h3>地域に根ざした信頼と<br>主治医・訪問看護との連携体制</h3>
+                    <p>担当ケアマネジャー様や市役所、地域の主治医・訪問看護と密に連携。長年培った強固な信頼関係をもとに、安心できる生活環境を支えます。</p>
+                    <div class="point-card-img-box">
+                        <img src="hareruya-staff2.jpg" alt="晴れる家 笑顔のスタッフ">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">3</span>
+                    <h3>安心の「終の棲家」<br>お看取りまで寄り添う</h3>
+                    <p>状態が変化しても退去を迫ることなく、ご本人・ご家族の意向に最大限寄り添いながら、住み慣れたホームで最期まで温かくケアを行います。</p>
+                    <div class="point-card-img-box">
+                        <img src="hareruya-bed.jpg" alt="晴れる家 落ち着いた居室">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 入居までの流れ (FLOW - ステップカード) -->
+    <section class="service-details-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FLOW</span>
+                <h2 class="section-h2">ご見学からご入居までの流れ</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">ご相談からご見学、ご面談、ご入居まで専門スタッフが丁寧にご案内いたします。</p>
+            </div>
+
+            <div class="step-flow-list">
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 01</span>
+                        <span class="step-badge-name">お問い合わせ</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>お電話・Webからのお問い合わせ</h4>
+                        <p>空室状況の確認、料金のお見積もり、パンフレットのご請求などお気軽にお問い合わせください。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 02</span>
+                        <span class="step-badge-name">施設のご見学</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>アットホームな館内・居室のご見学</h4>
+                        <p>スタッフがリビングや居室をご案内し、日々の生活の様子をご説明します。担当ケアマネジャー様のご同行も大歓迎です。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 03</span>
+                        <span class="step-badge-name">お申し込み・ご面談</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>ご本人様・ご家族様との事前ヒアリング</h4>
+                        <p>生活状況、お身体の状態、医療処置のご希望などを詳しくお伺いし、安心の受け入れ体制を整えます。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 04</span>
+                        <span class="step-badge-name">ご契約</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>契約締結（入居一時金0円）</h4>
+                        <p>利用契約を締結いたします。高額な入居一時金は不要ですので、初期費用を抑えてご入居いただけます。</p>
+                    </div>
+                </div>
+
+                <div class="step-flow-card">
+                    <div class="step-badge-col">
+                        <span class="step-badge-num">STEP 05</span>
+                        <span class="step-badge-name">ご入居・新生活</span>
+                    </div>
+                    <div class="step-body-col">
+                        <h4>お引越し・あたたかな新生活スタート</h4>
+                        <p>「おかえりなさい」の温かい気持ちでお迎えいたします。エアコンや照明、介護用ベッドが整った安心の個室で、穏やかな毎日をお過ごしください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Section (見やすい料金表) -->
+    <section class="service-price-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">PRICE GUIDE</span>
+                <h2 class="section-h2">ご利用料金のご案内</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">年金の範囲内でも無理なく長く暮らしていただけるよう、無駄を省いた明朗で良心的な料金体系を整えております。</p>
+            </div>
+
+            <div class="price-summary-box">
+                <div class="price-main-tag">
+                    <span class="price-lead-label">基本月額利用料（家賃・共益費・生活消耗品費・食費）</span>
+                    <span class="price-main-amount">141,500 円 / 月</span>
+                </div>
+
+                <table class="price-table-detail">
+                    <tr>
+                        <th style="width:40%;">家賃</th>
+                        <td>45,000円 / 月</td>
+                    </tr>
+                    <tr>
+                        <th>共益費</th>
+                        <td>25,500円 / 月</td>
+                    </tr>
+                    <tr>
+                        <th>生活消耗品費</th>
+                        <td>5,000円 / 月</td>
+                    </tr>
+                    <tr>
+                        <th>食費（3食✕30日計算）</th>
+                        <td>
+                            66,000円 / 月<br>
+                            <span style="font-size:0.85rem; color:var(--text-muted);">（朝食 600円 / 昼食 800円 / 夕食 800円）</span>
+                        </td>
+                    </tr>
+                    <tr style="font-size:1.02rem;">
+                        <th><strong>基本月額 合計</strong></th>
+                        <td><strong style="font-size:1.15rem;">141,500 円 / 月</strong></td>
+                    </tr>
+                </table>
+
+                <div style="background:#FFFFFF; border:1.5px solid var(--border-dark); border-radius:12px; padding:18px; margin-top:18px; text-align:left;">
+                    <p style="font-size:0.9rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">
+                        ご契約時の一時金・費用について
+                    </p>
+                    <ul style="font-size:0.84rem; color:var(--text-muted); line-height:1.75; margin-left:20px;">
+                        <li><strong>入居一時金：0円</strong>（高額な入居金は一切不要です）</li>
+                        <li>※食費は喫食実績に応じたご請求となります（上記は1日3食✕30日換算）。</li>
+                        <li>※介護保険自己負担分、医療費、個別のおむつ代等の実費は別途となります。</li>
+                        <li>※敷金等の詳細や個別サービスについては、ご見学・ご相談時に丁寧にご案内いたします。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section (施設概要 ＆ 提供サービス一覧) -->
+    <section class="service-details-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FACILITY & SERVICES</span>
+                <h2 class="section-h2">施設概要・提供サービス一覧</h2>
+            </div>
+
+            <div class="details-block-grid">
+                <div class="details-info-card">
+                    <h3>施設概要</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <th>施設種別</th>
+                            <td>住宅型有料老人ホーム</td>
+                        </tr>
+                        <tr>
+                            <th>居室総数</th>
+                            <td>全9床</td>
+                        </tr>
+                        <tr>
+                            <th>所在地</th>
+                            <td>埼玉県越谷市花田 7-14-16</td>
+                        </tr>
+                        <tr>
+                            <th>居室設備</th>
+                            <td>エアコン、照明器具、ナースコール、収納、介護用ベッド</td>
+                        </tr>
+                        <tr>
+                            <th>共用設備</th>
+                            <td>リビング・ダイニング、浴室（個浴）、洗面設備、車椅子対応トイレ</td>
+                        </tr>
+                        <tr>
+                            <th>医療連携</th>
+                            <td>地域の協力医療機関・訪問看護ステーション（24時間連携）</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="details-info-card">
+                    <h3>提供サービス内容一覧</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <th>生活支援</th>
+                            <td>居室清掃、リネン交換、洗濯代行、日常の生活相談</td>
+                        </tr>
+                        <tr>
+                            <th>身体介護</th>
+                            <td>食事介助、入浴介助、排泄介助、移動・移乗介助</td>
+                        </tr>
+                        <tr>
+                            <th>健康管理</th>
+                            <td>24時間安否確認、日々のバイタルチェック、服薬支援</td>
+                        </tr>
+                        <tr>
+                            <th>食事サービス</th>
+                            <td>栄養バランスに配慮した温かい家庭的な手作り料理</td>
+                        </tr>
+                        <tr>
+                            <th>地域・医療連携</th>
+                            <td>担当ケアマネジャー様・市役所・地域の主治医や訪問看護との連携</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (SEO・AIO対策) -->
+    <section class="service-faq-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FAQ</span>
+                <h2 class="section-h2">よくあるご質問</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">晴れる家のご入居や生活に関してよくいただくご質問にお答えします。</p>
+            </div>
+
+            <div class="faq-list-container">
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">日常的な医療処置や体調面の不安がありますが相談できますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、お気軽にご相談ください。担当ケアマネジャー様や行政（市役所）、地域の主治医・訪問看護ステーションと連携し、お一人おひとりの身体状況や医療ニーズに合わせて柔軟に受け入れをご相談させていただきます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">自宅でお世話になっていたケアマネジャーや訪問看護、主治医はそのまま続けられますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、継続してご利用いただけます。晴れる家は住宅型有料老人ホームですので、現在担当されているケアマネジャー様、かかりつけ医、訪問看護ステーションなどを変更することなくそのままご利用いただけます（※日々の生活サポートやレクリエーション等は晴れる家館内にて手厚くご提供いたします）。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">入居後に介護度が重くなったり、お看取りが必要になった場合も住み続けられますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、住み慣れたホームで最期までお過ごしいただけます。晴れる家は「終の棲家」として運営しており、状態が変化しても退去を迫ることなく、医師・看護師・ご家族様と連携して温かくお看取りまでケアを行います。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">入居一時金や月々の利用料が良心的なのはなぜですか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、全9床という家庭的な小規模ホームだからこそ、過剰な設備投資や余計なコストを抑え、手作りの温かいお食事や日々の手厚い見守りケアに特化しているためです。入居一時金0円、年金の範囲内でも将来にわたって無理なく長く住み続けていただける安心の価格設計としております。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">見学や入居相談は土日や祝日でも対応してもらえますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、事前にご予約いただければ土日祝日でも施設見学や入居相談を承っております。空室状況やお見積もり、ご家族様のご都合に合わせて丁寧にご案内いたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 越谷事業所アクセス案内 -->
+    <section class="service-access-section">
+        <div class="section-container">
+            <div class="access-grid">
+                <div class="access-info-panel">
+                    <span class="hero-cat-tag">ACCESS</span>
+                    <h3>住宅型有料老人ホーム 晴れる家</h3>
+                    <ul class="access-list">
+                        <li>
+                            <div><strong>所在地:</strong> 〒343-0015 埼玉県越谷市花田 7-14-16</div>
+                        </li>
+                        <li>
+                            <div><strong>お電話:</strong> <a href="tel:048-971-6199" style="color:var(--primary); font-weight:800; font-size:1.15rem;">048-971-6199</a></div>
+                        </li>
+                        <li>
+                            <div><strong>FAX:</strong> 048-971-6199</div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>交通アクセス:</strong><br>
+                                ・東武スカイツリーライン「北越谷駅」よりバス、「花田苑入口」下車 徒歩約5分（駐車場完備）
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="access-map-panel">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=埼玉県越谷市花田7-14-16&output=embed&z=15" 
+                        loading="lazy" 
+                        title="晴れる家 Google Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta-section" id="contact">
+        <div class="cta-box-inner">
+            <h2>施設のご見学・入居相談はお気軽にどうぞ</h2>
+            <p style="max-width:800px; margin:0 auto 28px; font-size:0.95rem; line-height:1.8;">
+                空室状況の確認、料金のお見積もり、施設見学のご予約など、専門スタッフが丁寧にご案内いたします。
+            </p>
+            <div class="cta-buttons-row">
+                <a href="tel:048-971-6199" class="btn-cta-tel">048-971-6199</a>
+                <a href="index.html#contact" class="btn-cta-mail">Webフォームから相談する</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="service-footer">
+        <div style="margin-bottom:12px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; font-size:0.84rem;">
+            <a href="index.html" style="color:var(--text-muted); text-decoration:none;">トップページ</a>
+            <a href="recruit.html" style="color:var(--text-muted, #718096); text-decoration:none;">採用情報</a>
+            <a href="privacy.html" style="color:var(--text-muted); text-decoration:none;">個人情報保護方針</a>
+            <a href="workplace.html" style="color:var(--text-muted); text-decoration:none;">職場環境等要件</a>
+        </div>
+        <p>&copy; 2009-2026 Clover Communications Co.,Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>居宅介護支援事業所 介護屋本舗 流山 | 株式会社クローバーコミュニケーションズ（千葉県流山市）</title>
+    <meta name="description" content="千葉県流山市西平井の「居宅介護支援事業所 介護屋本舗 流山」公式ページ。越谷で培った確かな実績とノウハウを受け継ぎ、同一拠点に併設された訪問看護・福祉用具との密な連携力で迅速対応。介護保険の申請代行やケアプラン作成を全額無料で承ります。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Shippori+Mincho:wght@600;800&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="service.css">
+    <style>
+        /* フィロソフィーグリッド */
+        .kyotaku-philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            gap: 32px;
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 20px;
+            padding: 28px 30px;
+            box-shadow: var(--shadow-solid);
+            align-items: stretch;
+            max-width: 920px;
+            margin: 0 auto;
+        }
+        .kyotaku-philosophy-photo {
+            width: 100%;
+            height: 100%;
+            min-height: 260px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 2px solid var(--border-dark);
+            box-shadow: 2px 2px 0px var(--border-dark);
+        }
+        .kyotaku-philosophy-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .kyotaku-philosophy-text {
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .kyotaku-philosophy-title {
+            font-size: clamp(1.2rem, 2.1vw, 1.55rem);
+            font-weight: 900;
+            color: var(--text-main);
+            margin: 8px 0 12px;
+            line-height: 1.4;
+        }
+        .kyotaku-philosophy-p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .kyotaku-philosophy-lead {
+            font-size: 0.95rem;
+            font-weight: 900;
+            color: var(--text-main);
+            line-height: 1.75;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1.5px dashed #E2E8F0;
+        }
+
+        /* 居宅解説ボックス */
+        .kyotaku-guide-card {
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 20px;
+            padding: 30px 32px;
+            box-shadow: var(--shadow-solid);
+            max-width: 880px;
+            margin: 32px auto 0;
+        }
+        .kyotaku-guide-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .kyotaku-guide-item {
+            background: #FAF8F5;
+            border: 1.5px solid var(--border-dark);
+            border-radius: 14px;
+            padding: 18px 16px;
+            box-shadow: 1.5px 1.5px 0px var(--border-dark);
+        }
+        .kyotaku-guide-item h4 {
+            font-size: 0.92rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            letter-spacing: -0.02em;
+        }
+        .kyotaku-guide-item p {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* 6つの仕事ステップグリッド (2カラム) */
+        .cycle-step-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            max-width: 880px;
+            margin: 24px auto 0;
+        }
+        .cycle-step-card {
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 16px;
+            padding: 20px 22px;
+            box-shadow: var(--shadow-solid-sm);
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            transition: all 0.2s ease;
+        }
+        .cycle-step-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-solid);
+        }
+        .cycle-num-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            color: #FFFFFF;
+            font-weight: 900;
+            font-size: 0.95rem;
+            border-radius: 10px;
+            border: 1.5px solid var(--border-dark);
+            box-shadow: 1.5px 1.5px 0px var(--border-dark);
+            flex-shrink: 0;
+        }
+        .cycle-body h4 {
+            font-size: 0.98rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .cycle-body p {
+            font-size: 0.84rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        /* 4つの多職種連携力グリッド */
+        .network-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            max-width: 880px;
+            margin: 24px auto 0;
+        }
+        .network-card-item {
+            background: #FAF8F5;
+            border: 2px solid var(--border-dark);
+            border-radius: 16px;
+            padding: 22px 20px;
+            box-shadow: var(--shadow-solid-sm);
+            position: relative;
+        }
+        .network-card-item h4 {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .network-card-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            .kyotaku-philosophy-grid {
+                grid-template-columns: 1fr;
+                padding: 24px;
+            }
+            .kyotaku-philosophy-photo {
+                height: 220px;
+            }
+            .kyotaku-guide-grid,
+            .cycle-step-grid,
+            .network-grid-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ピル見出しの文字色を黒に統一 & フィロソフィー幅調整 */
+        .hero-cat-tag, .section-sub-pill {
+            color: #2D3748 !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+        }
+        .silver-philosophy-text .section-sub-pill,
+        .fukurokuju-philosophy-text .section-sub-pill,
+        .hareruya-philosophy-text .section-sub-pill,
+        .kyotaku-philosophy-text .section-sub-pill,
+        .yougu-philosophy-text .section-sub-pill {
+            display: inline-flex !important;
+            width: fit-content !important;
+            align-self: flex-start !important;
+            margin-bottom: 12px !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="service-header">
+        <div class="service-header-container">
+            <a href="index.html" class="service-header-logo">
+                <img src="logo_fix-08.png" alt="株式会社クローバーコミュニケーションズ">
+            </a>
+            <div class="service-header-actions">
+                <a href="index.html#services" class="btn-header-back">トップへ戻る</a>
+                <a href="#contact" class="btn-header-contact">介護相談（無料）</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="service-hero-container">
+            <div class="service-hero-text">
+                <span class="hero-cat-tag">居宅介護支援事業所</span>
+                <h1 class="hero-main-h1">
+                    越谷の実績を流山へ。<br>
+                    地域との連携力で、安心な生活を。<br>
+                    <span class="highlight-green">居宅介護支援事業所 介護屋本舗 流山</span>
+                </h1>
+                <p class="hero-desc">
+                    「介護保険はどう使うの？」「退院後の生活が不安…」。居宅介護支援事業所は、介護保険サービスを利用するための総合相談窓口です。クローバー創業の地・越谷で培った確かな経験とノウハウを受け継ぎ、流山の地域に寄り添います。同一拠点にある訪問看護・福祉用具事業所とのワンチーム連携で、迅速かつ柔軟なサポートをお届けします。
+                </p>
+                <div class="hero-badges-row">
+                    <div class="hero-badge-item">訪問看護・福祉用具の同一拠点連携</div>
+                    <div class="hero-badge-item">相談・プラン作成 0円（全額無料）</div>
+                    <div class="hero-badge-item">要介護認定の申請代行・調査対応</div>
+                    <div class="hero-badge-item">越谷のノウハウと実績を継承</div>
+                </div>
+            </div>
+            <div class="service-hero-photo-frame">
+                <img src="kaigoyahonpo-nagareyama-main.jpg" alt="居宅介護支援事業所 介護屋本舗 流山 外観" class="service-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section (写真入りエッセイ) -->
+    <section class="service-points-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="kyotaku-philosophy-grid">
+                <div class="kyotaku-philosophy-photo">
+                    <img src="kaigoyahonpo-nagareyama-staff.jpg" alt="流山事業所 笑顔で寄り添うケアマネジャースタッフ">
+                </div>
+                <div class="kyotaku-philosophy-text">
+                    <span class="section-sub-pill">PHILOSOPHY</span>
+                    <h2 class="kyotaku-philosophy-title">「その人らしく幸せに生きる！」<br>ためのお手伝いを。</h2>
+                    <p class="kyotaku-philosophy-p">
+                        「介護サービスってどうしたら受けられるの？」「介護保険の申請や手続きが分からない…」など、介護に関する不安やお悩みは十人十色です。
+                    </p>
+                    <p class="kyotaku-philosophy-p">
+                        クローバーが越谷の地で十数年にわたり培ってきた確かなノウハウを受け継ぎ、ご利用者様とご家族の想いやこれまでの生活リズムを何よりも大切に伺った上で、お一人おひとりに最適な介護サービスをご提案いたします。
+                    </p>
+                    <p class="kyotaku-philosophy-lead">
+                        住み慣れたご自宅や地域で、いつまでも安心して笑顔で過ごせるように。流山の皆さまの暮らしに親身に寄り添い続けます。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 居宅介護支援事業所とは？（わかりやすい解説BOX） -->
+            <div class="kyotaku-guide-card">
+                <h3 style="font-size:1.1rem; font-weight:900; color:var(--text-main); text-align:center; margin-bottom:8px;">
+                    居宅介護支援事業所（ケアマネジメント）とは？
+                </h3>
+                <p style="font-size:0.88rem; color:var(--text-muted); text-align:center; max-width:680px; margin:0 auto; line-height:1.75;">
+                    介護が必要な方やご家族が安心して在宅生活を続けられるよう、介護保険の申請代行やケアプラン作成、各種サービス事業者や医療機関との連絡調整を総合的に行う「介護の総合窓口」です。
+                </p>
+                <div class="kyotaku-guide-grid">
+                    <div class="kyotaku-guide-item">
+                        <h4>1. 相談・作成は全額無料</h4>
+                        <p>ケアプラン作成や相談費用は全額介護保険から給付されるため、お客様の自己負担は0円（完全無料）です。</p>
+                    </div>
+                    <div class="kyotaku-guide-item">
+                        <h4>2. 申請から手配までワンストップ</h4>
+                        <p>市役所への要介護認定申請代行から、デイサービス・ヘルパー・訪問看護の手配まで全てサポートします。</p>
+                    </div>
+                    <div class="kyotaku-guide-item">
+                        <h4>3. ご家族に寄り添うパートナー</h4>
+                        <p>ご本人の身体状況や生活リズム、ご家族の想いを尊重し、無理のない最適な介護生活を共に考えます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 介護屋本舗 流山が選ばれる3つの理由 (写真入り3カラムカード) -->
+    <section class="service-details-section" style="background:#FFFFFF; border-top:2px solid var(--border-dark); border-bottom:2px solid var(--border-dark);">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">NAGAREYAMA FEATURES</span>
+                <h2 class="section-h2">介護屋本舗 流山が選ばれる3つの安心理由</h2>
+                <p style="max-width:760px; margin:12px auto 0; font-size:0.92rem; color:var(--text-muted); line-height:1.75;">
+                    訪問看護・福祉用具の併設シナジーと、越谷で培った確かなノウハウで迅速に対応します。
+                </p>
+            </div>
+
+            <div class="points-grid-3">
+                <div class="point-card">
+                    <span class="point-card-num">1</span>
+                    <h3>訪問看護・福祉用具が同拠点<br>密な多職種ワンチーム連携</h3>
+                    <p>同一拠点内に訪問看護ステーションと福祉用具事業所が併設。看護師や福祉用具専門相談員と日常的に連携し、医療的ケアや用具手配もスピーディに行えます。</p>
+                    <div class="point-card-img-box">
+                        <img src="kaigoyahonpo-nagareyama-pc.jpg" alt="流山事業所 迅速な情報共有とケアプラン作成">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">2</span>
+                    <h3>創業の地・越谷で培った<br>確かなノウハウと安心感</h3>
+                    <p>クローバーが十数年にわたり培ってきた豊富なケアマネジメントの知見と行政・医療連携のノウハウをそのまま継承し、質の高いプランをご提案します。</p>
+                    <div class="point-card-img-box">
+                        <img src="kaigoyahonpo-nagareyama-staff.jpg" alt="流山事業所 笑顔のケアマネジャー">
+                    </div>
+                </div>
+                <div class="point-card">
+                    <span class="point-card-num">3</span>
+                    <h3>地域密着のフットワーク<br>親身なご自宅訪問サポート</h3>
+                    <p>流山市全域をカバーし、困ったときに迅速に駆けつけられる機動力。親しみやすいケアマネジャーが、ご本人・ご家族の不安を丁寧に解消します。</p>
+                    <div class="point-card-img-box">
+                        <img src="kaigoyahonpo-nagareyama-main.jpg" alt="流山事業所 地域密着の拠点">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ケアマネジャーの主な仕事（6つの基本サイクル） -->
+    <section class="service-details-section" style="background:#FAF8F5;">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">CARE MANAGEMENT CYCLE</span>
+                <h2 class="section-h2">ケアマネジャーの主な仕事（6つの基本サイクル）</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">ご相談から日々の生活支援まで、以下のサイクルで継続的にサポートいたします。</p>
+            </div>
+
+            <div class="cycle-step-grid">
+                <div class="cycle-step-card">
+                    <span class="cycle-num-badge">1</span>
+                    <div class="cycle-body">
+                        <h4>インテーク（初回面接・ご希望の傾聴）</h4>
+                        <p>新規の利用者様やご家族と面談し、現在のお困りごとや今後の生活に対するご希望を丁寧にヒアリングします。</p>
+                    </div>
+                </div>
+
+                <div class="cycle-step-card">
+                    <span class="cycle-num-badge">2</span>
+                    <div class="cycle-body">
+                        <h4>アセスメント（課題分析・状況把握）</h4>
+                        <p>健康状態、生活環境、ご家族の状況などを専門的視点から分析し、解決すべき課題や自立への目標を明確にします。</p>
+                    </div>
+                </div>
+
+                <div class="cycle-step-card">
+                    <span class="cycle-num-badge">3</span>
+                    <div class="cycle-body">
+                        <h4>ケアプラン（居宅サービス計画）の作成</h4>
+                        <p>課題や目標に合わせて、デイサービス、訪問看護、ヘルパー、福祉用具貸与などを最適に組み合わせた計画案を作成します。</p>
+                    </div>
+                </div>
+
+                <div class="cycle-step-card">
+                    <span class="cycle-num-badge">4</span>
+                    <div class="cycle-body">
+                        <h4>サービス担当者会議の開催・合意形成</h4>
+                        <p>利用者様・ご家族と各サービス事業者の担当者を交えた会議を主催し、チーム全体で共通認識と合意を形成します。</p>
+                    </div>
+                </div>
+
+                <div class="cycle-step-card">
+                    <span class="cycle-num-badge">5</span>
+                    <div class="cycle-body">
+                        <h4>モニタリング（月1回以上の定期訪問）</h4>
+                        <p>毎月必ずご自宅を訪問し、プラン通りに快適な生活が送れているか、心身状態に変化がないかを継続確認します。</p>
+                    </div>
+                </div>
+
+                <div class="cycle-step-card">
+                    <span class="cycle-num-badge">6</span>
+                    <div class="cycle-body">
+                        <h4>給付管理 ＆ 更新・変更サポート</h4>
+                        <p>利用実績に応じた国保連への給付管理事務や、定期的な要介護認定の更新・区分変更手続きを確実に代行します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 医療・地域・行政と結ぶ4つの連携力 (周辺業務) -->
+    <section class="service-details-section" style="background:#FFFFFF; border-top:2px solid var(--border-dark); border-bottom:2px solid var(--border-dark);">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">NETWORK & SUPPORT</span>
+                <h2 class="section-h2">医療・地域・行政を結ぶ介護屋本舗の4つの連携力</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">プラン作成にとどまらず、流山での在宅療養を支える幅広い周辺業務・多職種連携を担います。</p>
+            </div>
+
+            <div class="network-grid-4">
+                <div class="network-card-item">
+                    <h4><i class="fa-solid fa-hospital-user" style="color:var(--primary);"></i> 1. 医療機関との退院調整・主治医連携</h4>
+                    <p>流山市内外の病院医師・看護師・医療ソーシャルワーカー（MSW）と退院前から連携し、退院当日から安心してご自宅で過ごせるよう環境を調整。主治医意見書の発行依頼や医療処置の調整も迅速に行います。</p>
+                </div>
+
+                <div class="network-card-item">
+                    <h4><i class="fa-solid fa-clipboard-check" style="color:var(--primary);"></i> 2. 認定調査のサポート・申請代行</h4>
+                    <p>流山市役所への要介護認定の新規申請や更新手続きを代行。「調査員の前だと本人が張り切ってしまう」といった不安に寄り添い、日頃の正確な状態を調査員に伝える立ち会いサポートも承ります。</p>
+                </div>
+
+                <div class="network-card-item">
+                    <h4><i class="fa-solid fa-house-chimney-medical" style="color:var(--primary);"></i> 3. 住宅改修理由書作成 ＆ 福祉用具連携</h4>
+                    <p>転倒予防や安全な移動のための手すり設置・段差解消など、介護保険住宅改修に必要な「理由書」を作成。同一拠点の福祉用具事業所とも連携し、最適なベッドや車いすの選定・即時納品を助言します。</p>
+                </div>
+
+                <div class="network-card-item">
+                    <h4><i class="fa-solid fa-users" style="color:var(--primary);"></i> 4. 地域ケア会議参画 ＆ 気軽な相談窓口</h4>
+                    <p>流山市の地域包括支援センターが主催する地域ケア会議等に積極的に参加し、困難事例や地域課題を共有。契約前であっても、地域住民の皆さまからの「ちょっとした介護相談」にも温かくお応えします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section (事業所概要 ＆ サービス一覧) -->
+    <section class="service-details-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">OFFICE & SERVICES</span>
+                <h2 class="section-h2">事業所概要・提供サービス一覧</h2>
+            </div>
+
+            <div class="details-block-grid">
+                <div class="details-info-card">
+                    <h3>事業所概要</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <th>事業所名</th>
+                            <td>居宅介護支援事業所 介護屋本舗 流山</td>
+                        </tr>
+                        <tr>
+                            <th>介護保険事業所番号</th>
+                            <td>1272502905</td>
+                        </tr>
+                        <tr>
+                            <th>管理者</th>
+                            <td>松川 澄子</td>
+                        </tr>
+                        
+                        <tr>
+                            <th>所在地</th>
+                            <td>〒270-0156 千葉県流山市大字西平井 2-2 コージィコートナカムラ 101</td>
+                        </tr>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>08:30 〜 17:30（月曜日〜金曜日 / 祝日営業）</td>
+                        </tr>
+                        <tr>
+                            <th>対応エリア</th>
+                            <td>流山市全域および近隣エリア（松戸市・柏市・野田市等ご相談可）</td>
+                        </tr>
+                        <tr>
+                            <th>ご利用料金</th>
+                            <td><strong>自己負担 0 円（全額介護保険給付）</strong> ※相談・ケアプラン作成・申請代行等すべて無料</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="details-info-card">
+                    <h3>提供サービス内容一覧</h3>
+                    <table class="spec-table">
+                        <tr>
+                            <th>介護総合相談</th>
+                            <td>介護保険制度のご案内、在宅生活全般のお悩み・契約前相談</td>
+                        </tr>
+                        <tr>
+                            <th>申請・調査支援</th>
+                            <td>要介護認定の新規・更新・区分変更申請代行、認定調査立ち会い</td>
+                        </tr>
+                        <tr>
+                            <th>ケアプラン作成</th>
+                            <td>課題分析（アセスメント）に基づく居宅サービス計画書の作成</td>
+                        </tr>
+                        <tr>
+                            <th>訪問看護・用具連携</th>
+                            <td>同拠点スタッフとの即時連携による医療処置・ベッド等の手配</td>
+                        </tr>
+                        <tr>
+                            <th>退院調整・住環境整備</th>
+                            <td>病院MSW連携、住宅改修理由書作成、福祉用具選定アドバイス</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 流山事業所アクセス案内 -->
+    <section class="service-access-section">
+        <div class="section-container">
+            <div class="access-grid">
+                <div class="access-info-panel">
+                    <span class="hero-cat-tag">ACCESS</span>
+                    <h3>居宅介護支援事業所 介護屋本舗 流山</h3>
+                    <ul class="access-list">
+                        <li>
+                            <div><strong>管理者:</strong> 松川 澄子</div>
+                        </li>
+                        <li>
+                            <div><strong>所在地:</strong> 〒270-0156 千葉県流山市大字西平井 2-2 コージィコートナカムラ 101</div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div><strong>お電話:</strong> <a href="tel:04-7189-7506" style="color:var(--primary); font-weight:900; font-size:1.15rem;">04-7189-7506</a></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-fax"></i>
+                            <div><strong>FAX:</strong> 04-7137-7607</div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>交通アクセス:</strong><br>
+                                ・流鉄流山線「平和台駅」徒歩約8分<br>
+                                ・つくばエクスプレス「流山セントラルパーク駅」徒歩約15分
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="access-map-panel">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=千葉県流山市大字西平井2-2&output=embed&z=15" 
+                        loading="lazy" 
+                        title="介護屋本舗 流山 Google Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (SEO・AIO対策) -->
+    <section class="service-faq-section">
+        <div class="section-container">
+            <div class="section-title-box">
+                <span class="section-sub-pill">FAQ</span>
+                <h2 class="section-h2">よくあるご質問</h2>
+                <p style="font-size:0.92rem; color:var(--text-muted); margin-top:8px;">居宅介護支援（ケアマネジメント）に関してよくいただくご質問にお答えします。</p>
+            </div>
+
+            <div class="faq-list-container">
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">ケアプランの作成や介護相談に費用はかかりますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            いいえ、一切かかりません。ケアプランの作成や介護相談、要介護認定の申請代行などの居宅介護支援サービスは全額介護保険から給付されますので、<strong>お客様の自己負担は0円（完全無料）</strong>です。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">訪問看護や福祉用具も同じ事業所にあるメリットは何ですか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            ケアマネジャー、訪問看護師、福祉用具専門相談員が同一拠点で日常的に顔を合わせているため、「急に点滴や処置が必要になった」「退院にあわせてベッドをすぐ手配したい」といった場合でも、タイムラグなく迅速かつ密に連携して対応できる点が最大の強みです。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">まだ介護認定を受けていませんが、申請や認定調査の立ち会いもお願いできますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、お任せください。流山市役所への新規要介護認定申請の代行はもちろん、認定調査当日にご家族様と一緒に同席し、日頃のご本人の生活状況やお困りごとを正しく調査員へ伝えるサポートも行っています。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">入院中ですが、退院後の在宅介護について相談できますか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、退院前の早期からのご相談を強くおすすめしております。病院の医療ソーシャルワーカー様や医師と連携して退院前カンファレンスに参加し、退院当日から安心して生活できるよう事前に準備を整えます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-card-item">
+                    <div class="faq-q-row">
+                        <span class="faq-q-badge">Q</span>
+                        <h3 class="faq-q-title">契約するか決まっていませんが、相談だけでも大丈夫ですか？</h3>
+                    </div>
+                    <div class="faq-a-row">
+                        <span class="faq-a-badge">A</span>
+                        <p class="faq-a-text">
+                            はい、大歓迎です。「親の物忘れが心配」「介護保険で何ができるか知りたい」といった段階の、ちょっとしたご相談窓口としても対応しております。お気軽にお電話や来所にてご相談ください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta-section" id="contact">
+        <div class="cta-box-inner">
+            <h2>流山での介護のお悩み・申請手続きは無料相談へ</h2>
+            <p>「介護が必要になったけれど何から始めればいい？」「訪問看護や福祉用具も合わせて相談したい」など、越谷のノウハウを継承し訪問看護・福祉用具と連携する流山のケアマネジャーが丁寧にお応えします。</p>
+            <div class="cta-buttons-row">
+                <a href="tel:04-7189-7506" class="btn-cta-tel">04-7189-7506</a>
+                <a href="index.html#contact" class="btn-cta-mail">Webフォームから無料相談</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="service-footer">
+        <div style="margin-bottom:12px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; font-size:0.84rem;">
+            <a href="index.html" style="color:var(--text-muted); text-decoration:none;">トップページ</a>
+            <a href="recruit.html" style="color:var(--text-muted, #718096); text-decoration:none;">採用情報</a>
+            <a href="privacy.html" style="color:var(--text-muted); text-decoration:none;">個人情報保護方針</a>
+            <a href="workplace.html" style="color:var(--text-muted); text-decoration:none;">職場環境等要件</a>
+        </div>
+        <p>&copy; 2009-2026 Clover Communications Co.,Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

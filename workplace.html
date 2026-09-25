@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職場環境等要件（処遇改善加算の見える化） | 株式会社クローバーコミュニケーションズ</title>
+    <meta name="description" content="株式会社クローバーコミュニケーションズにおける介護職員等処遇改善加算にかかる職場環境等要件（資質の向上、労働環境・処遇の改善、その他）の取り組み内容を公表しています。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Shippori+Mincho:wght@600;800&family=Zen+Maru+Gothic:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="service.css">
+    <style>
+        .workplace-container {
+            max-width: 1060px;
+            margin: 40px auto 80px;
+            padding: 0 20px;
+        }
+        .workplace-card {
+            background: #FFFFFF;
+            border: 2px solid var(--border-dark);
+            border-radius: 20px;
+            padding: 40px 44px;
+            box-shadow: var(--shadow-solid);
+        }
+        .workplace-card h1 {
+            font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid var(--border-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .workplace-lead {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            line-height: 1.85;
+            margin-bottom: 16px;
+        }
+        .workplace-sub-lead {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 28px;
+            background: #FAF8F5;
+            border-left: 4px solid var(--primary);
+            padding: 12px 18px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        /* 職場環境要件テーブル */
+        .wp-matrix-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 2px solid var(--border-dark);
+            border-radius: 14px;
+            overflow: hidden;
+            background: #FFFFFF;
+            box-shadow: var(--shadow-solid-sm);
+        }
+        .wp-matrix-table thead th {
+            background: var(--primary);
+            color: #FFFFFF;
+            font-weight: 900;
+            font-size: 0.92rem;
+            padding: 14px 16px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid var(--border-dark);
+        }
+        .wp-matrix-table tbody tr {
+            border-bottom: 1px solid #E2E8F0;
+        }
+        .wp-matrix-table tbody tr:last-child {
+            border-bottom: none;
+        }
+        .wp-matrix-table td {
+            padding: 18px 20px;
+            font-size: 0.88rem;
+            line-height: 1.8;
+            vertical-align: top;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        .wp-matrix-table tr:last-child td {
+            border-bottom: none;
+        }
+        .wp-category-col {
+            font-weight: 900;
+            color: var(--text-main);
+            background: #FAF8F5;
+            width: 22%;
+            border-right: 1.5px solid #CBD5E0;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle !important;
+            font-size: 0.95rem;
+        }
+        .wp-content-col {
+            width: 40%;
+            color: var(--text-muted);
+            border-right: 1px solid #E2E8F0;
+            background: #FFFFFF;
+        }
+        .wp-action-col {
+            width: 38%;
+            color: var(--text-main);
+            background: #FAFCF8;
+            font-weight: 500;
+        }
+        .wp-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .wp-list li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 8px;
+        }
+        .wp-list li:last-child {
+            margin-bottom: 0;
+        }
+        .wp-list li::before {
+            content: "・";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 900;
+        }
+
+        @media (max-width: 820px) {
+            .workplace-card {
+                padding: 24px 18px;
+            }
+            .wp-matrix-table,
+            .wp-matrix-table thead,
+            .wp-matrix-table tbody,
+            .wp-matrix-table th,
+            .wp-matrix-table td,
+            .wp-matrix-table tr {
+                display: block;
+                width: 100%;
+            }
+            .wp-matrix-table thead {
+                display: none;
+            }
+            .wp-matrix-table tbody tr {
+                border-bottom: 2px solid var(--border-dark);
+                margin-bottom: 20px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .wp-category-col {
+                width: 100%;
+                background: var(--primary);
+                color: #FFFFFF;
+                text-align: left;
+                padding: 12px 16px;
+                border-right: none;
+                font-size: 1rem;
+            }
+            .wp-content-col {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px dashed #CBD5E0;
+                padding: 14px 16px;
+                background: #FAF8F5;
+            }
+            .wp-content-col::before {
+                content: "【区分内容】";
+                display: block;
+                font-weight: 900;
+                color: var(--text-main);
+                font-size: 0.82rem;
+                margin-bottom: 6px;
+            }
+            .wp-action-col {
+                width: 100%;
+                padding: 14px 16px;
+                background: #FFFFFF;
+            }
+            .wp-action-col::before {
+                content: "【当社の取組】";
+                display: block;
+                font-weight: 900;
+                color: var(--primary);
+                font-size: 0.82rem;
+                margin-bottom: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="service-header">
+        <div class="service-header-container">
+            <a href="index.html" class="service-header-logo">
+                <img src="logo clover.png" alt="株式会社クローバーコミュニケーションズ">
+            </a>
+            <div class="service-header-actions">
+                <a href="index.html" class="btn-header-back">
+                    <i class="fa-solid fa-arrow-left"></i> トップページへ戻る
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="workplace-container">
+        <div class="workplace-card">
+            <span class="section-sub-pill">WORKPLACE ENVIRONMENT</span>
+            <h1>介護職員等処遇改善加算にかかる職場環境等要件</h1>
+            
+            <p class="workplace-lead">
+                当社では介護職員等の処遇改善のため、厚生労働省が定める職場環境等要件（入職促進、資質の向上、両立支援、心身の健康管理、生産性向上のための業務改善、やりがい・働きがいの醸成の6区分）に基づき、以下の取り組みを実施しています。
+            </p>
+            <p class="workplace-sub-lead">
+                これらの要件に取り組み、ホームページへの記載を通して「見える化」することで、介護に携わるすべての人が、より良く生活ができるよう目指しています。
+            </p>
+
+            <table class="wp-matrix-table">
+                <thead>
+                    <tr>
+                        <th style="width:22%;">区分</th>
+                        <th style="width:40%;">内容</th>
+                        <th style="width:38%;">当社の取組</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 1. 入職促進に向けた取組 -->
+                    <tr>
+                        <td class="wp-category-col">入職促進に向けた取組</td>
+                        <td class="wp-content-col">
+                            <ul class="wp-list">
+                                <li>法人や事業所の経営理念やケア方針・人材育成方針、その実現のための施策・仕組みなどの明確化</li>
+                                <li>事業者の共同による採用・人事ローテーション・研修のための制度構築</li>
+                                <li>他産業からの転職者、主婦層、中高年齢者等、経験者・有資格者等にこだわらない幅広い採用の仕組みの構築</li>
+                                <li>職業体験の受入れや地域行事への参加や主催等による職業魅力度向上の取組の実施</li>
+                            </ul>
+                        </td>
+                        <td class="wp-action-col">
+                            <ul class="wp-list">
+                                <li>「お客様の幸せと地域社会の発展のために最善を尽くしきる」経営理念のもと、キャリアパスの設計や評価制度を構築し、面談や会議などを通して共有・見直しをおこなっています。</li>
+                                <li>他産業からの転職者：3名（事務職・配送業など）</li>
+                                <li>主婦層：15名以上 ／ 中高年齢者（45歳〜）：40名以上</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- 2. 資質の向上やキャリアアップに向けた支援 -->
+                    <tr>
+                        <td class="wp-category-col">資質の向上や<br>キャリアアップに向けた支援</td>
+                        <td class="wp-content-col">
+                            <ul class="wp-list">
+                                <li>働きながら介護福祉士取得を目指す者に対する実務者研修受講支援や、より専門性の高い介護技術を取得しようとする者に対する喀痰吸引、認知症ケア、サービス提供責任者研修、中堅職員に対するマネジメント研修の受講支援等</li>
+                                <li>研修の受講やキャリア段位制度と人事考課との連動</li>
+                                <li>エルダー・メンター（仕事やメンタル面のサポート等をする担当者）制度等導入</li>
+                                <li>上位者・担当者等によるキャリア面談など、キャリアアップ等に関する定期的な相談の機会の確保</li>
+                            </ul>
+                        </td>
+                        <td class="wp-action-col">
+                            <ul class="wp-list">
+                                <li>キャリアパス/給与クラス制度を導入のうえ、資格による手当を支給しています。資格だけでなく、個々のつよみを活かすことのできる職場を目指しています。</li>
+                                <li>職員が自発的に学習できるよう、階級に応じてe-ラーニングを整備し、キャリアアップを支援しています。</li>
+                                <li>研修受講時は勤務時間の調整、資格取得時は補助金の助成をおこなっています。</li>
+                                <li>年1〜2回の人事評価・面談を実施しています。人事評価システムを導入し、個々の成長の見える化を推進しています。</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- 3. 両立支援・多様な働き方の推進 -->
+                    <tr>
+                        <td class="wp-category-col">両立支援・<br>多様な働き方の推進</td>
+                        <td class="wp-content-col">
+                            <ul class="wp-list">
+                                <li>職員の事情等の状況に応じた勤務シフトや短時間正規職員制度の導入、職員の希望に即した非正規職員から正規職員への転換の制度等の整備</li>
+                                <li>有給休暇が取得しやすい環境の整備</li>
+                                <li>業務や福利厚生制度、メンタルヘルス等の職員相談窓口の設置等相談体制の充実</li>
+                            </ul>
+                        </td>
+                        <td class="wp-action-col">
+                            <ul class="wp-list">
+                                <li>どなたでも働きやすい職場づくりを進めるため、個々のライフスタイルや家庭環境に合わせた柔軟な勤務時間の設定や勤務日数の調整を行っています。</li>
+                                <li>職場環境・雇用条件を整え、余裕のある人員配置を目指し、月10日休み、有給休暇や希望休の積極的な取得を推進しています。</li>
+                                <li>定期健康診断の完全受診やメンタルヘルス相談窓口の設置など、職員が安心して長く働き続けられる健康管理体制を整えています。</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- 4. 腰痛を含む心身の健康管理 -->
+                    <tr>
+                        <td class="wp-category-col">腰痛を含む<br>心身の健康管理</td>
+                        <td class="wp-content-col">
+                            <ul class="wp-list">
+                                <li>介護職員の身体の負担軽減のための介護技術の修得支援、介護ロボットやリフト等の介護機器等導入及び研修等による腰痛対策の実施</li>
+                                <li>雇用管理改善のための管理者に対する研修等の実施</li>
+                                <li>事故・トラブルへの対応マニュアル等の作成等の体制の整備</li>
+                            </ul>
+                        </td>
+                        <td class="wp-action-col">
+                            <ul class="wp-list">
+                                <li>研修やOJTを通じた介護技術習得支援を行っています。</li>
+                                <li>システムを通じて匿名での職場のサーベイランス調査をおこない、管理者へフィードバックしています。</li>
+                                <li>会社全体で事故やトラブルへ向き合えるよう、従業員から代表までの報告フローを確立しています。</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- 5. 生産性向上のための業務改善の取組 -->
+                    <tr>
+                        <td class="wp-category-col">生産性向上のための<br>業務改善の取組</td>
+                        <td class="wp-content-col">
+                            <ul class="wp-list">
+                                <li>タブレット端末やインカム等のICT活用や見守り機器等の介護ロボットやセンサー等の導入による業務量の縮減</li>
+                                <li>高齢者の活躍（居室やフロア等の掃除、食事の配膳・下膳などのほか、経理や労務、広報なども含めた介護業務以外の業務の提供）等による役割分担の明確化</li>
+                                <li>5S活動（業務管理の手法の1つ。整理・整頓・清掃・清潔・躾の頭文字をとったもの）等の実践による職場環境の整備</li>
+                                <li>業務手順書の作成や、記録・報告様式の工夫等による情報共有や作業負担の軽減</li>
+                            </ul>
+                        </td>
+                        <td class="wp-action-col">
+                            <ul class="wp-list">
+                                <li>各事業所へパソコン、タブレット、スマートフォン端末を充足させ、介護業務に係る記録の作成や管理・管理業務に対してICTを活用しています。</li>
+                                <li>高齢の従業員の希望に合わせ、半日勤務への転換や、業務内容の変更をおこなっています。（65歳以上の介護従業員：5名、厨房従業員：5名）</li>
+                                <li>IT機器に不慣れでも記録しやすいシステムを選択しています。</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <!-- 6. やりがい・働きがいの醸成 -->
+                    <tr>
+                        <td class="wp-category-col">やりがい・<br>働きがいの醸成</td>
+                        <td class="wp-content-col">
+                            <ul class="wp-list">
+                                <li>ミーティング等による職場内コミュニケーションの円滑化による個々の介護職員の気づきを踏まえた勤務環境やケア内容の改善</li>
+                                <li>地域包括ケアの一員としてのモチベーション向上に資する、地域の児童・生徒や住民との交流の実施</li>
+                                <li>利用者本位のケア方針など介護保険や法人の理念等を定期的に学ぶ機会の提供</li>
+                                <li>ケアの好事例や、利用者やその家族からの謝意等の情報を共有する機会の提供</li>
+                            </ul>
+                        </td>
+                        <td class="wp-action-col">
+                            <ul class="wp-list">
+                                <li>各事業所で定期ミーティング、事例検討会、ヒヤリハット会議など、情報共有をおこなっています。</li>
+                                <li>個々の身体状況やニーズに合わせた介護を提供できるよう、円滑に情報交換ができるシステムを導入しています。</li>
+                                <li>地域で行われるケア会議に積極的に参加し、事例の共有や情報交換を行っています。</li>
+                                <li>近隣幼稚園との交流やボランティア交流を実施しています。</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="service-footer">
+        <div style="margin-bottom:12px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap; font-size:0.84rem;">
+            <a href="index.html" style="color:var(--text-muted); text-decoration:none;">トップページ</a>
+            <a href="recruit.html" style="color:var(--text-muted, #718096); text-decoration:none;">採用情報</a>
+            <a href="privacy.html" style="color:var(--text-muted); text-decoration:none;">個人情報保護方針</a>
+            <a href="workplace.html" style="color:var(--text-muted); text-decoration:none;">職場環境等要件</a>
+        </div>
+        <p>&copy; 2009-2026 Clover Communications Co.,Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
